@@ -54,7 +54,7 @@ class LabelObject:
 
         self.win.withdraw();
         self.turn = True;
-        self.win.after(self.mintosec(1), self.update);
+        self.win.after(1000*60, self.update);
 
 
     def update(self) -> int:
@@ -72,7 +72,7 @@ class LabelObject:
             self.win.deiconify();
             self.turn = False;
         else:
-            self.win.after(8000, self.disappear);
+            self.win.after(4000, self.disappear);
 
 
     def get_random_number(self, range_) -> int:
