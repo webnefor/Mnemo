@@ -6,7 +6,7 @@ TRANSLATE                   = [];
 
 GetArray                    = [];
 
-len_elemnt                  = 0;
+lenElements                 = 0;
 
 def get(path) -> int:
     global GetArray;
@@ -27,8 +27,10 @@ def get(path) -> int:
 def spliter() -> int:
 
     global LIST_CONTENTS, PRONUNCE, EXAMPLE, TRANSLATE, GetArray;
-    global len_elemnt;
-    len_elemnt = 4;
+    global lenElements;
+    
+    lenElements = 4;
+
     for i in range(0, len(GetArray)):
         (LIST_CONTENTS.append
             (GetArray[i].split(",")[0].strip())

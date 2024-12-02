@@ -1,4 +1,5 @@
 
+
 import config.settingArgs
 import config.GetWords
 import config.Core
@@ -11,15 +12,16 @@ def main() -> int:
 
     config.GetWords.init(args.path);
 
-    kernel_tk = config.Core.CoreTkinter();
+    kernel_tk = config.Core.CoreTkinter(args.mode);
 
-    kernel_tk.set_appearence();
+    kernel_tk.set_style();
 
     label_objects = config.LabelObject.LabelObject(
         kernel_tk,config.GetWords.LIST_CONTENTS,
         config.GetWords.PRONUNCE,
         config.GetWords.EXAMPLE,
-        config.GetWords.TRANSLATE
+        config.GetWords.TRANSLATE,
+        args.time
     );
 
     label_objects.create();
@@ -32,3 +34,5 @@ def main() -> int:
 
 if __name__ == '__main__':
     main()
+
+
