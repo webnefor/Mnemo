@@ -7,14 +7,10 @@ Example list.conf
 
 Params:
 
-  --time, -t 
-  
-      default: 1
+  --time, -t: default 3 min 
       
-  --path, -p 
-  
-      default: /words.list
+  --path, -p: default: /words.list
       
-  --mode, -m 
+  --mode, -m: default: 1 or 0
+
   
-      default: 1 or 0
