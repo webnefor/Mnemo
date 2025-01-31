@@ -18,7 +18,7 @@ class MainWindow:
         self.screen_width = self.root.winfo_screenwidth()
         self.screen_height = self.root.winfo_screenheight()
 
-        # self.bg = tk.PhotoImage(file="./images/background.png");
+        # self.bg = tk.PhotoImage(fi  le="./images/background.png");
         (self.root.geometry
          (f"400x300+{int(int(self.screen_width) / int(3))}+{int(int(self.screen_height) / int(3))}"));
         self.root.maxsize(400, 300)
