@@ -39,7 +39,7 @@ class Menu:
 
         self.timeChoose = Spinbox(self.screen, from_=1, to=45, font="Arial 15 bold", buttonbackground='white',
                                   width=5, increment=1)
-        self.timeChoose.place(x=290, y=90)
+        self.timeChoose.place(x=297, y=90)
 
 
     def chooseFileWin(self):

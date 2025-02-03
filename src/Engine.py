@@ -24,7 +24,7 @@ class Engine(metaclass=SingletonMeta):
 
         self.root           = tkinter.Tk();
         self.custom_font    = font.Font(family="italic", weight="normal", size=45);  # 2560 × 1600
-        self.canvas         = Canvas(self.root, width=400, height=300);
+        self.canvas         = Canvas(self.root, width=400, height=400);
 
         self.mode           = mode;
 
