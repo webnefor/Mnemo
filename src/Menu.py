@@ -74,10 +74,12 @@ class Menu:
 
         if pathlib.Path(path).exists():
             try:
+
                 self.screen.withdraw();
 
                 self.controllerWin = Controller.Controller(path, time, handler=self.stop);
                 self.controllerWin.run();
+
             except Exception as e:
                 print(e);
         else:
