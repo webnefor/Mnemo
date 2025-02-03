@@ -1,0 +1,2 @@
+Hello,[Hello'],Hello, how are you?, Привет;
+World,[Wor'd],The whole world, Мир;
